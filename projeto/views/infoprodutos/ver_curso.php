@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/navbar7.css">
+    <link rel="stylesheet" href="./public/css/info-products1.css">
+    <link rel="stylesheet" href="./public/css/footer2.css">
+    <link rel="stylesheet" href="./public/css/utils4.css">
+    <title>Bounty - <?=$titulo?></title>
+</head>
+<body>
+<?php
+include_once __DIR__."/../componentes/navbar.php";
+?>
+<div class="container-xxl center">
+    <h1 class="text-primary pt-5 mt-5 ms-5">Aulas do curso</h1>
+    <div class="col-md-7 pt-5 mb-5 m-auto">
+        <?php if (!empty($_SESSION['mensagem'])) {
+            echo $_SESSION['mensagem'];
+            $_SESSION['mensagem'] = '';
+        }?>
+    </div>
+    <?php 
+        if (!empty($aulas)) {
+
+            $id = $infoproduto['id'];
+            $foto = $infoproduto['src'];
+            $curso = $infoproduto['descricao'];
+            $id_usuario = $_SESSION['token'];
+            $valor_de_compra = $infoproduto['preco'];
+            $percentual = $infoproduto['percentual_para_afiliados'];
+            foreach ($aulas as $aula) {
+
+                $sumario = $aula['sumario'];
+                $licao = $aula['numero_da_licao'];
+
+                echo "
+                    <div class='product shadow'>
+                        <div class='img'>
+                            <img src='$url/public/img/infoprodutos/$foto' width='230' height='150'>
+                        </div>
+                        <div class='desc'>
+                            <p class='name'>$curso</p>
+                            <p class='price'>$licao $sumario</p>
+                            <div class='wrapper'>
+                                <form action='./comprar-infoproduto' method='POST'>
+                                    <input type='hidden' name='id' value='$id'>
+                                    <input type='hidden' name='id_usuario' value='$id_usuario'>
+                                    <input type='submit' name='comprar_infoproduto' value='Comprar curso' class='add'>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                ";
+            }
+        } else {
+            echo "<p class='center mt-3'>Ainda não há detalhes sobre aulas deste curso</p>";
+        }
+        
+    ?>
+</div>
+
+<?php
+    include_once __DIR__."/../componentes/footer.php";
+?>
+<script src="./public/js/bootstrap/bootstrap.js"></script>
+</body>
+</html>

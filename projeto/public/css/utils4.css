@@ -1,0 +1,140 @@
+:root{
+    --color-item-nav:blue;
+    --color-confortable:rgb(0, 119, 255);
+    --color-item-nav-hover:rgba(0, 0, 255, 0.836);
+    --font-weight-bold:bold;
+}
+
+main{
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/banners/conceito-de-branding-da-solucao-de-estrategia-de-gestao-corporativa_53876-167088.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding-top: 15%;
+}
+
+main p,section.course-banner p{
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+
+main h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 55px;
+}
+
+section.course-banner{
+    width: 100%;
+    height: 800px;
+    background-image: url('../img/banners/linda-mulher-de-negocios-africana-olhando-para-a-tela-do-laptop-sobre-parede-branca_176420-11192.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding-top: 15%;
+}
+
+section.father-son-banner{
+    width: 100%;
+    height: 800px;
+    background-image: url('../img/banners/feliz-mulher-etnica-com-cabelos-crespos-sorri-alegremente-enquanto-fala-no-smartphone-e-levanta-a-palma-da-mao-vestida-com-um-elegante-casaco-amarelo_273609-34013.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+section.course-banner p,section.father-son-banner p{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12em;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+
+section.course-banner p{
+    color: blue;
+}
+
+section.father-son-banner p{
+    color: #fff;
+}
+
+.my-btn-blue{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border:3px solid blue;
+    border-radius: 2px;
+    background-color:blue;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.my-btn-blue:hover{
+    background-color:#fff;
+    color: blue;
+}
+
+.my-btn-black{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border:3px solid #000;
+    border-radius: 2px;
+    background-color:black;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.my-btn-black:hover{
+    background-color:#fff;
+    color: black;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.border-full{
+    border-radius: 100%;
+}
+
+.my-icon{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.numbers{
+    font-weight: var(--font-weight-bold);
+    font-size: 2em;
+}

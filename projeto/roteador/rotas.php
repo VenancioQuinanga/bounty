@@ -1,0 +1,42 @@
+<?php
+/**
+ * @return array
+ */
+$rotas = [
+    '/'=>'ControladorDeHome@home',
+    '/usuarios/registro'=>'ControladorDeUsuario@registro',
+    '/usuarios/login'=>'ControladorDeUsuario@login',
+    '/usuarios/codigo-de-verificacao'=>'ControladorDeUsuario@codigo_de_verificacao',
+    '/usuarios/redefinir-senha'=>'ControladorDeUsuario@redefinir_senha',
+    '/usuarios/logout'=>'ControladorDeUsuario@logout',
+    '/gerir-usuarios'=>'ControladorDeUsuario@gerir_usuarios',
+    '/gerir-compras'=>'ControladorDeUsuario@gerir_compras',
+    '/gerir-produtos'=>'ControladorDeUsuario@gerir_produtos',
+    '/editar-usuario'=>'ControladorDeUsuario@editar_usuario',
+    '/perfil'=>'ControladorDeUsuario@perfil',
+    '/carteira'=>'ControladorDeUsuario@carteira',
+    '/depositos'=>'ControladorDeUsuario@depositos',
+    '/saques'=>'ControladorDeUsuario@saques',
+    '/meus-produtos'=>'ControladorDeUsuario@meus_produtos',
+    '/adquiridos'=>'ControladorDeUsuario@adquiridos',
+    '/produtores'=>'ControladorDeUsuario@produtores',
+    '/criar-infoproduto'=>'ControladorDeUsuario@criar_infoproduto',
+    '/afiliados'=>'ControladorDeUsuario@afiliados',
+    '/explorar-infoprodutos'=>'ControladorDeUsuario@explorar_infoprodutos',
+    '/cursos'=>'ControladorDeInfoprodutos@cursos',
+    '/adicionar-aula'=>'ControladorDeInfoprodutos@adicionar_aulas',
+    '/editar-aula'=>'ControladorDeInfoprodutos@editar_aulas',
+    '/gerir-aulas'=>'ControladorDeInfoprodutos@gerir_aulas',
+    '/assistir-curso'=>'ControladorDeUsuario@assistir_curso',
+    '/ver-curso'=>'ControladorDeInfoprodutos@ver_curso',
+    '/livros'=>'ControladorDeInfoprodutos@livros',
+    '/adicionar-livro'=>'ControladorDeInfoprodutos@adicionar_livro',
+    '/adicionar-capitulo'=>'ControladorDeInfoprodutos@adicionar_capitulos',
+    '/editar-capitulo'=>'ControladorDeInfoprodutos@editar_capitulos',
+    '/gerir-capitulos'=>'ControladorDeInfoprodutos@gerir_capitulos',
+    '/editar-infoproduto'=>'ControladorDeUsuario@editar_infoproduto',
+    '/ver-livro'=>'ControladorDeInfoprodutos@ver_livro',
+    '/comprar-infoproduto'=>'ControladorDeUsuario@comprar_infoproduto',
+    '/conhecer-plataforma'=>'ControladorDeUsuario@conhecer_plataforma',
+    '/testes'=>'ControladorDeTestes@testes'
+];
